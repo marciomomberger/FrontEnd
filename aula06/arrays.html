@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    document.write("<h3>Arrays e seus métodos de manipulação</h3>");
+    let frutas = ["Maçã", "Banana", "Uva"]; // criei o array de frutas
+    document.write("O array frutas tem os seguintes elementos: ", frutas);  //Maçã,Banana,Uva
+    document.write("<br>O elemento do indice 0 é: ", frutas[0]); //Maçã
+    document.write("<h4>Adicionando e removendo elementos</h4>");
+    document.write("Vou adicionar um elemento no final da lista com push()");
+    frutas.push("Laranja");
+    document.write("<br>Adicionei o elemento Laranja :", frutas);//Maçã,Banana,Uva,Laranja
+    document.write("<br>Vou adicionar um elemento no inicio da lista com unshift()");
+    frutas.unshift("Mamão");
+    document.write("<br>Adicionei o elemento Mamão :", frutas);//Mamão,Maçã,Banana,Uva,Laranja
+    document.write("<br>Vou remover o elemento da ultima posição com o pop()");
+    frutas.pop();
+    document.write("<br>Removi o ultimo elemento: ", frutas);//Mamão,Maçã,Banana,Uva
+    document.write("<br>Vou remover o elemento da primeira posição com o shift()");
+    frutas.shift();
+    document.write("<br>Removi o primeiro elemento: ", frutas);//Maçã,Banana,Uva
+    document.write("<br>Vou remover um elemento utilizando o método splice()");
+    let numeros = [1, 2, 3];
+    document.write("<br> O array original: ", numeros); //1,2,3
+    numeros.splice(1, 1, 10); //posição de inicio, item a remover se for colocado numero, opcional(adicionar/substituir)
+    document.write("<br> O array novo: ",numeros); //1,10,3
+    document.write("<br> O array original: ", numeros); 
+    document.write("<br>Vou setar a posição inicial, o segundo parametro de");
+    document.write(" deleção/susbstituição deixo O aí ele acrescenta,este adiciona ")
+    document.write("o elemento, ou elementos")
+    numeros.splice(1, 0, 10,20); //posição de inicio, item a remover se for colocado numero, opcional(adicionar/substituir)
+    document.write("<br> O array novo: ",numeros); //1,10,3
+
+  </script>
+
+</body>
+
+</html>

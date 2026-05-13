@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Solicita a frase ao usuário
+    let frase = prompt("Digite uma frase:");
+
+    // Remove espaços no início e no fim
+    let fraseTratada = frase.trim();
+
+    // Conta o número de caracteres
+    let totalCaracteres = fraseTratada.length;
+
+    // Conta quantas vezes a letra "a" aparece (maiúscula e minúscula)
+    let contadorA = 0;
+
+    for (let i = 0; i < fraseTratada.length; i++) {
+      if (fraseTratada[i].toLowerCase() === "a") {
+        contadorA++;
+      }
+    }
+
+    // Exibe os resultados
+    document.write("<h3>Frase digitada:", fraseTratada,"</h3><br>");
+    document.write("<h3>Total de caracteres:", totalCaracteres,"</h3><br>");
+    document.write("<h3>Quantidade de letras 'a':", contadorA,"</h3><br>");
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu com Position Relative</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* MENU */
+        .menu {
+            position: relative; /* mantém no fluxo, mas permite deslocamento */
+            background-color: #333;
+            padding: 15px;
+            top: 10px; /* desloca levemente para baixo */
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Exemplo de elemento dentro do menu */
+        .badge {
+            position: absolute; /* relativo ao menu */
+            top: 5px;
+            right: 10px;
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+
+        .conteudo {
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- MENU -->
+<div class="menu">
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+
+    <!-- Elemento posicionado dentro do menu -->
+    <div class="badge">Novo</div>
+</div>
+
+<!-- CONTEÚDO -->
+<div class="conteudo">
+    <h1>Página de Exemplo</h1>
+    <p>Este menu usa <strong>position: relative</strong>.</p>
+    <p>Observe que ele não fica fixo — apenas pode ser deslocado.</p>
+</div>
+
+</body>
+</html>

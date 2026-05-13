@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let produtos = [];
+    let totalCompra = 0;
+    let qtdecarrinho=2;
+
+    // Cadastro de produtos
+    for (let i = 0; i < qtdecarrinho; i++) {
+      let nome = prompt(`Digite o nome do produto ${i + 1}:`);
+      let preco = parseFloat(prompt(`Digite o preço do produto ${i + 1}:`));
+      let quantidade = parseInt(prompt(`Digite a quantidade do produto ${i + 1}:`));
+
+      let produto = {
+        nome: nome,
+        preco: preco,
+        quantidade: quantidade,
+        total: preco * quantidade
+      };
+
+      produtos.push(produto);
+    }
+
+    // Exibição
+    document.write("<h3>----- LISTA DE PRODUTOS -----</h3>");
+
+    for (let p of produtos) {
+      document.write(`Produto: ${p.nome}<br>`);
+      document.write(`Preço unitário: R$ ${p.preco.toFixed(2)}<br>`);
+      document.write(`Quantidade: ${p.quantidade.toFixed(2)}<br>`);
+      document.write(`Total do produto: R$ ${p.total.toFixed(2)}<br>`);
+      document.write("---------------------------<br><br>");
+
+      totalCompra += p.total;
+    }
+
+    // Total geral
+    document.write(`VALOR TOTAL DA COMPRA: R$ ${totalCompra.toFixed(2)}`);
+  </script>
+
+</body>
+
+</html>

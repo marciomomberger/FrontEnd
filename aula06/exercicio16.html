@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Solicita a frase ao usuário
+    let frase = prompt("Digite uma frase:");
+
+    // Remove espaços extras no início e fim
+    let fraseTratada = frase.trim();
+
+    // Separa as palavras (considerando um ou mais espaços)
+    let palavras = fraseTratada.split(" ");
+    //let palavras = fraseTratada.split(/\s+/); //mais de um espaços entre as palavras
+
+    // Conta as palavras
+    let quantidade = palavras.length;
+
+    // Exibe os resultados
+    document.write("Lista de palavras:", palavras,"<br>");
+    document.write("Quantidade de palavras:", quantidade);
+  </script>
+
+</body>
+
+</html>

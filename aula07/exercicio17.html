@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let nomes = [];
+    let precos = [];
+    let quantidades = [];
+    let totais = [];
+    let qtdecarrinho=2;
+
+    let totalCompra = 0;
+
+    // Cadastro de produtos
+    for (let i = 0; i < qtdecarrinho; i++) {
+      nomes[i] = prompt(`Digite o nome do produto ${i + 1}:`);
+      precos[i] = parseFloat(prompt(`Digite o preço do produto ${i + 1}:`));
+      quantidades[i] = parseInt(prompt(`Digite a quantidade do produto ${i + 1}:`));
+
+      totais[i] = precos[i] * quantidades[i];
+    }
+
+    // Exibição
+   document.write("<h2>----- LISTA DE PRODUTOS -----</h2>");
+
+    for (let i = 0; i < qtdecarrinho; i++) {
+      document.write(`Produto: ${nomes[i]}<br>`);
+      document.write(`Preço unitário: R$ ${precos[i].toFixed(2)}<br>`);
+      document.write(`Quantidade: ${quantidades[i].toFixed(2)}<br>`);
+      document.write(`Total do produto: R$ ${totais[i].toFixed(2)}<br>`);
+      document.write("---------------------------<br><br>");
+
+      totalCompra += totais[i];
+    }
+
+    // Total geral
+    document.write(`<h5>VALOR TOTAL DA COMPRA: R$ ${totalCompra.toFixed(2)}</h5>`);
+  </script>
+
+</body>
+
+</html>

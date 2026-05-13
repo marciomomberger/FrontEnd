@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplo font-size</title>
+    <style>
+        /* Base do documento */
+        html {
+            font-size: 16px;
+            /* base para rem */
+        }
+
+        body {
+            font-family: Arial;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* px (fixo) */
+        .px {
+            font-size: 20px;
+            color: blue;
+        }
+
+        /* % (relativo ao pai) */
+        .percent {
+            font-size: 150%;
+            color: green;
+        }
+
+        /* em (relativo ao pai) */
+        .em {
+            font-size: 1.5em;
+            color: purple;
+        }
+
+        /* rem (relativo ao html) */
+        .rem {
+            font-size: 2rem;
+            color: red;
+        }
+
+        /* vw (relativo à largura da tela) */
+        .vw {
+            font-size: 5vw;
+            color: orange;
+        }
+
+        /* palavras-chave */
+        .keyword-small {
+            font-size: small;
+        }
+
+        .keyword-large {
+            font-size: large;
+        }
+
+        /* Exemplo de cascata com em */
+        .pai {
+            font-size: 20px;
+        }
+
+        .filho {
+            font-size: 1.5em;
+            /* 1.5 x 20px = 30px */
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Exemplo de font-size</h1>
+        <p class="px">Texto usando px (fixo)</p>
+        <p class="percent">Texto usando % (relativo ao container)</p>
+        <p class="em">Texto usando em (relativo ao pai)</p>
+        <p class="rem">Texto usando rem (relativo ao html)</p>
+        <p class="vw">Texto usando vw (responsivo)</p>
+        <p class="keyword-small">Texto pequeno (small)</p>
+        <p class="keyword-large">Texto grande (large)</p>
+        <div class="pai">
+            <p class="filho">Texto com em dentro de outro elemento (efeito cascata)</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+    document.write("<h1>Métodos de Manipulação de Strings</h1>");
+    let palavra="JavaScript";
+    document.write("A palavra original "+palavra+"<br><br>");
+    document.write("Colocando a palavra para Maiúsculo : "+palavra.toUpperCase()+"<br>");
+    document.write("Colocando a palavra para Minúsculo : "+palavra.toLowerCase()+"<br><br>");
+    let frase="   Olá Mundo    ";
+    document.write("A frase original é "+frase+".<br>");
+    document.write("Remover espaços em branco : "+frase.trim()+"<br><br>");
+    frase="Eu gosto de Java";
+    document.write("A frase original é "+frase+".<br>");
+    document.write("Substituição : "+frase.replace("Java","Javascript")+"<br><br>"); // O que quero substituir
+    document.write("Outra forma de substituição : "+"a a a".replaceAll("a","b")+"<br><br>")
+    let texto = "maçã,banana,uva";
+    document.write("O texto original é "+texto+"<br>");
+    let frutas = texto.split(","); // cria um array(lista) com os elementos do texto
+    document.write("A lista tem os elementos : "+frutas+"<br>");
+    document.write("Acesso pelo indice a lista indice 0 :"+frutas[0]+"<br><br>");
+    let palavras =["Olá","Mundo","Javascript"];
+    document.write("A Lista original :"+palavras+"<br>");
+    frase = palavras.join(" "); // juntas as palavras da lista
+    document.write("Mostrar a frase usando o join : "+frase+"<br><br>")
+    texto = "JavaScript"
+    document.write("texto original : "+texto+"<br>");
+    document.write("Retorna a primeira incidência da letra S: "+texto.indexOf("S")+"<br>");
+    document.write("Verifica se tem a palavra Java : "+texto.includes("Java")+"<br><br>");
+    document.write("A substring da posição O a 4 :"+texto.substring(0,4)+"<br><br>"); //onde começa e qtas posições
+    document.write("Para descobrir o tamanho da string : "+texto.length)

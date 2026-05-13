@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplo text-decoration</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Valores básicos */
+        .none {
+            text-decoration: none;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .overline {
+            text-decoration: overline;
+        }
+
+        .line-through {
+            text-decoration: line-through;
+        }
+
+        /* Personalização */
+        .color {
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+
+        .style {
+            text-decoration: underline;
+            text-decoration-style: dashed;
+        }
+
+        .thickness {
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+        }
+
+        /* Forma abreviada */
+        .shorthand {
+            text-decoration: underline wavy blue 2px;
+        }
+
+        /* Links estilizados */
+        a {
+            text-decoration: none;
+            color: blue;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Exemplos de text-decoration</h1>
+        <h2>Valores básicos</h2>
+        <p class="none">Sem decoração</p>
+        <p class="underline">Sublinhado</p>
+        <p class="overline">Linha acima</p>
+        <p class="line-through">Texto riscado</p>
+        <h2>Personalização</h2>
+        <p class="color">Sublinhado com cor vermelha</p>
+        <p class="style">Sublinhado tracejado</p>
+        <p class="thickness">Sublinhado mais grosso</p>
+        <h2>Forma abreviada</h2>
+        <p class="shorthand">Sublinhado ondulado azul</p>
+        <h2>Links com hover</h2>
+        <a href="#">Passe o mouse aqui</a>
+    </div>
+</body>
+
+</html>

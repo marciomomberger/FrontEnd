@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display e Position</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        .box {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        /* ================= DISPLAY ================= */
+
+        /* 1 - block */
+        .block {
+            display: block;
+        }
+
+        /* 2 - inline */
+        .inline {
+            display: inline;
+            background-color: lightcoral;
+        }
+
+        /* 3 - inline-block */
+        .inline-block {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+        }
+
+        /* 4 - none */
+        .none {
+            display: none;
+        }
+
+        /* 5 - flex */
+        .flex-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* ================= POSITION ================= */
+
+        /* 1 - static (padrão) */
+        .static {
+            position: static;
+        }
+
+        /* 2 - relative */
+        .relative {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            background-color: lightgreen;
+        }
+
+        /* 3 - absolute */
+        .pai {
+            position: relative;
+            height: 150px;
+            background-color: #ddd;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: orange;
+        }
+
+        /* 4 - fixed */
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+        }
+
+        /* 5 - sticky */
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: purple;
+            color: white;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Exemplos de Display e Position</h1>
+
+    <!-- DISPLAY -->
+    <h2>Display</h2>
+
+    <h3>1. Block</h3>
+    <div class="box block">Elemento Block</div>
+
+    <h3>2. Inline</h3>
+    <span class="inline">Inline 1</span>
+    <span class="inline">Inline 2</span>
+
+    <h3>3. Inline-block</h3>
+    <div class="inline-block box">Box 1</div>
+    <div class="inline-block box">Box 2</div>
+
+    <h3>4. None</h3>
+    <div class="none">Este não aparece</div>
+
+    <h3>5. Flex</h3>
+    <div class="flex-container">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+    </div>
+
+    <!-- POSITION -->
+    <h2>Position</h2>
+
+    <h3>1. Static</h3>
+    <div class="box static">Static</div>
+
+    <h3>2. Relative</h3>
+    <div class="box relative">Relative (deslocado)</div>
+
+    <h3>3. Absolute</h3>
+    <div class="pai">
+        <div class="box absolute">Absolute</div>
+    </div>
+
+    <h3>4. Fixed</h3>
+    <div class="fixed">Fixo</div>
+
+    <h3>5. Sticky</h3>
+    <div class="sticky">Sticky (role a página)</div>
+    <p style="height: 800px;">Conteúdo para rolagem...</p>
+
+</div>
+
+</body>
+</html>

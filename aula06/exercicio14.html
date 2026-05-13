@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Solicita a palavra ao usuário
+    let palavra = prompt("Digite uma palavra:");
+
+    // Converte para minúsculo
+    let palavraTratada = palavra.toLowerCase();
+
+    // Inverte a palavra
+    let palavraInvertida = palavraTratada.split("").reverse().join("");
+
+    /*
+    split("") → transforma a string em array de letras
+    reverse → inverte a sequencia
+    join("") → junta novamente em string
+    */
+
+    // Verifica se é palíndromo
+    if (palavraTratada === palavraInvertida) {
+      alert("A palavra "+ palavraTratada +" É um palíndromo!");
+    } else {
+      alert("A palavra "+palavraTratada +" Não é um palíndromo.");
+    }
+  </script>
+
+</body>
+
+</html>

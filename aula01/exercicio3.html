@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang=“en”>
+
+<head>
+    <meta charset=“UTF-8”>
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // lê os dados de entrada
+        var vlrCompra = Number(prompt("Informe o valor da Compra R$ "));
+        //Calcular condições
+        var vlrAvista = vlrCompra*0.9;
+        var vlrPrestacao = vlrCompra/3;
+        alert("O valor da Compra R$ " + vlrCompra.toFixed(2) +
+         "\nO valor à vista : "+vlrAvista.toFixed(2) +
+          "\nValor a prazo 3X R$ " + vlrPrestacao.toFixed(2));
+    </script>
+</body>

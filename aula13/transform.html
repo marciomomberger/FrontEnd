@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Transform com Explicação</title>
+
+<style>
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+/* BASE */
+.caixa {
+    width: 120px;
+    height: 120px;
+    background: steelblue;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    margin: 10px 0;
+
+    transition: 0.5s;
+}
+
+/* 1️⃣ TRANSLATE */
+.translate:hover {
+    transform: translateX(100px);
+}
+
+/* 2️⃣ SCALE */
+.scale:hover {
+    transform: scale(1.5);
+}
+
+/* 3️⃣ ROTATE */
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+/* 4️⃣ SKEW */
+.skew:hover {
+    transform: skew(20deg);
+}
+
+/* 5️⃣ COMBINAÇÃO */
+.combo:hover {
+    transform: translateX(50px) rotate(30deg) scale(1.2);
+}
+
+/* 6️⃣ 3D */
+.rotate3d:hover {
+    transform: rotateY(180deg);
+}
+
+/* 7️⃣ SCALE X */
+.scalex:hover {
+    transform: scaleX(2);
+}
+
+/* 8️⃣ TRANSLATE Y */
+.translatey:hover {
+    transform: translateY(-50px);
+}
+
+/* TEXTO */
+p {
+    margin: 5px 0 15px;
+    color: #444;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎯 Transform com Explicação</h1>
+
+<!-- 1 -->
+<h2>1️⃣ Translate (Mover)</h2>
+<div class="caixa translate">Hover</div>
+<p>
+👉 <strong>transform: translateX(100px)</strong><br>
+Move o elemento 100px para a direita (eixo X).
+</p>
+
+<!-- 2 -->
+<h2>2️⃣ Scale (Aumentar)</h2>
+<div class="caixa scale">Hover</div>
+<p>
+👉 <strong>transform: scale(1.5)</strong><br>
+Aumenta o tamanho em 50%.
+</p>
+
+<!-- 3 -->
+<h2>3️⃣ Rotate (Girar)</h2>
+<div class="caixa rotate">Hover</div>
+<p>
+👉 <strong>transform: rotate(45deg)</strong><br>
+Gira o elemento em 45 graus.
+</p>
+
+<!-- 4 -->
+<h2>4️⃣ Skew (Inclinar)</h2>
+<div class="caixa skew">Hover</div>
+<p>
+👉 <strong>transform: skew(20deg)</strong><br>
+Inclina o elemento, criando efeito de distorção.
+</p>
+
+<!-- 5 -->
+<h2>5️⃣ Combinação</h2>
+<div class="caixa combo">Hover</div>
+<p>
+👉 Combina várias transformações:<br>
+Mover + girar + aumentar.
+</p>
+
+<!-- 6 -->
+<h2>6️⃣ Rotação 3D</h2>
+<div class="caixa rotate3d">Hover</div>
+<p>
+👉 <strong>rotateY(180deg)</strong><br>
+Gira o elemento no eixo Y (efeito 3D).
+</p>
+
+<!-- 7 -->
+<h2>7️⃣ ScaleX</h2>
+<div class="caixa scalex">Hover</div>
+<p>
+👉 <strong>scaleX(2)</strong><br>
+Aumenta apenas na largura (horizontal).
+</p>
+
+<!-- 8 -->
+<h2>8️⃣ TranslateY</h2>
+<div class="caixa translatey">Hover</div>
+<p>
+👉 <strong>translateY(-50px)</strong><br>
+Move o elemento para cima.
+</p>
+
+</body>
+</html>

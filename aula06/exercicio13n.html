@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulação de Frase</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            width: 300px;
+            padding: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Digite uma frase</h2>
+
+    <input type="text" id="frase" placeholder="Digite aqui...">
+    <br>
+    <button onclick="processarFrase()">Processar</button>
+
+    <div class="resultado" id="saida"></div>
+
+    <script>
+        function processarFrase() {
+            let frase = document.getElementById("frase").value;
+
+            // Remove espaços extras
+            let fraseTratada = frase.trim();
+
+            // Coloca primeira letra maiúscula
+            let palavras = fraseTratada.split(" ");
+
+            let fraseFormatada = palavras.map(p => {
+                if (p.length === 0) return "";
+                return p[0].toUpperCase() + p.slice(1).toLowerCase();
+            }).join(" ");
+
+            // Verifica ponto final
+            let terminaComPonto = fraseFormatada.endsWith(".");
+
+            // Exibe resultado
+            document.getElementById("saida").innerHTML =
+                "Frase formatada: " + fraseFormatada + "<br>" +
+                "Termina com ponto final? " + (terminaComPonto ? "Sim" : "Não");
+        }
+    </script>
+
+</body>
+</html>

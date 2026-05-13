@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja Tech</title>
+
+<style>
+:root{
+  --primary:#0d6efd;
+  --dark:#222;
+  --light:#f5f6fa;
+  --accent:#ff4757;
+}
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family: Arial, sans-serif;
+  background:var(--light);
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  z-index:1000;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+}
+
+.logo{
+  font-size:20px;
+  font-weight:bold;
+  color:var(--primary);
+}
+
+.menu{
+  display:flex;
+  gap:20px;
+}
+
+.menu a{
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+}
+
+.menu a:hover{
+  color:var(--primary);
+}
+
+/* HERO */
+.hero{
+  margin-top:70px;
+  height:300px;
+  background:linear-gradient(to right, #0d6efd, #5dade2);
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:36px;
+}
+
+.hero p{
+  margin-top:10px;
+}
+
+/* PRODUTOS */
+.container{
+  padding:40px 20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+}
+
+/* CARD */
+.card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  text-align:center;
+  position:relative;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card img{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  border:3px solid var(--primary);
+  object-fit:cover;
+}
+
+.card h3{
+  margin:10px 0;
+}
+
+.preco{
+  color:green;
+  font-weight:bold;
+  margin:10px 0;
+}
+
+/* BADGE */
+.badge{
+  position:absolute;
+  top:10px;
+  right:10px;
+  background:var(--accent);
+  color:white;
+  padding:5px 8px;
+  font-size:12px;
+  border-radius:5px;
+}
+
+/* BOTÃO */
+button{
+  background:var(--primary);
+  color:white;
+  border:none;
+  padding:10px 15px;
+  border-radius:5px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#0b5ed7;
+}
+
+/* BOTÃO FIXO */
+.chat{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:green;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+}
+
+/* FOOTER */
+footer{
+  background:var(--dark);
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:20px;
+}
+
+/* RESPONSIVO */
+@media (max-width:768px){
+  .menu{
+    display:none;
+  }
+
+  .hero h1{
+    font-size:24px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">LojaTech</div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Bem-vindo à Loja Tech</h1>
+  <p>Os melhores produtos de informática</p>
+</section>
+
+<section class="container">
+  <div class="grid">
+
+    <div class="card">
+      <div class="badge">Novo</div>
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+      <h3>Notebook</h3>
+      <p>i5, 8GB RAM, SSD</p>
+      <div class="preco">R$ 3500</div>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <div class="badge">Promo</div>
+      <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7">
+      <h3>Mouse Gamer</h3>
+      <p>Alta precisão RGB</p>
+      <div class="preco">R$ 150</div>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <div class="badge">Top</div>
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+      <h3>Teclado Mecânico</h3>
+      <p>Switch azul</p>
+      <div class="preco">R$ 300</div>
+      <button>Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+<div class="chat">💬</div>
+
+<footer>
+  © 2026 LojaTech - Todos os direitos reservados
+</footer>
+
+</body>
+</html>

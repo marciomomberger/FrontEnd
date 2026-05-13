@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu com Position</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* MENU FIXO */
+        .menu {
+            position: fixed; /* fixa no topo */
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Conteúdo para testar rolagem */
+        .conteudo {
+            margin-top: 60px; /* espaço para o menu */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- MENU -->
+<div class="menu">
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+</div>
+
+<!-- CONTEÚDO -->
+<div class="conteudo">
+    <h1>Página de Exemplo</h1>
+    <p>Role a página para ver o menu fixo.</p>
+
+    <p style="height: 1000px;">
+        Conteúdo grande para rolagem...
+    </p>
+</div>
+
+</body>
+</html>

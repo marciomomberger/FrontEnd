@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplos de Border</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        .box {
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #eee;
+        }
+
+        /* 1 - Borda simples */
+        .b1 {
+            border: 2px solid black;
+        }
+
+        /* 2 - Tipos de borda */
+        .b2 { border: 3px dashed red; }
+        .b3 { border: 3px dotted blue; }
+        .b4 { border: 3px double green; }
+
+        /* 3 - Bordas individuais */
+        .b5 {
+            border-top: 3px solid red;
+            border-right: 3px solid blue;
+            border-bottom: 3px solid green;
+            border-left: 3px solid orange;
+        }
+
+        /* 4 - border-width */
+        .b6 {
+            border-style: solid;
+            border-width: 1px 5px 10px 15px;
+        }
+
+        /* 5 - border-color */
+        .b7 {
+            border: 4px solid;
+            border-color: red green blue orange;
+        }
+
+        /* 6 - border-radius */
+        .b8 {
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+
+        /* 7 - círculo */
+        .b9 {
+            width: 100px;
+            height: 100px;
+            border: 3px solid purple;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        /* 8 - forma abreviada */
+        .b10 {
+            border: 5px solid teal;
+        }
+
+        /* 9 - efeito hover */
+        .b11 {
+            border: 3px solid gray;
+            transition: 0.3s;
+        }
+
+        .b11:hover {
+            border: 3px solid red;
+        }
+
+        /* 10 - imagem com borda */
+        img {
+            border: 5px solid black;
+            border-radius: 10px;
+            width: 150px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Exemplos de Border</h1>
+    <h2>1. Borda simples</h2>
+    <div class="box b1">border: 2px solid</div>
+    <h2>2. Tipos de borda</h2>
+    <div class="box b2">dashed</div>
+    <div class="box b3">dotted</div>
+    <div class="box b4">double</div>
+    <h2>3. Bordas individuais</h2>
+    <div class="box b5">Cada lado diferente</div>
+    <h2>4. Largura da borda</h2>
+    <div class="box b6">border-width</div>
+    <h2>5. Cor da borda</h2>
+    <div class="box b7">border-color</div>
+    <h2>6. Cantos arredondados</h2>
+    <div class="box b8">border-radius</div>
+    <h2>7. Círculo</h2>
+    <div class="b9">OK</div>
+    <h2>8. Forma abreviada</h2>
+    <div class="box b10">Shorthand</div>
+    <h2>9. Hover</h2>
+    <div class="box b11">Passe o mouse aqui</div>
+    <h2>10. Imagem com borda</h2>
+    <img src="https://via.placeholder.com/150">
+</div>
+</body>
+</html>

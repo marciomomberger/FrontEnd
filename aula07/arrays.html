@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    document.write("<h3>Exemplo de uso do forEach</h3>");
+    let nomes = ["Marcos", "Eduardo", "Guilherme"];
+    nomes.forEach(nome => {
+      document.write("Nome : " + nome + "<br>");
+
+    });
+    document.write("<h3>Exemplo de uso do map</h3>");
+    let numeros = [1, 2, 3];
+    //multiplicação de cada elemento e criando um array novo com estes elementos
+    let dobro = numeros.map(n => n * 2);
+    document.write("O Array original :" + numeros +
+      " o array criado com o map():  " + dobro + "<br>"); // [2, 4, 6]
+
+    document.write("<h3>Exemplo de uso do map</h3>");
+    numeros = [1, 2, 3, 4, 5, 6];
+    let pares = numeros.filter(n => n % 2 === 0);
+    document.write("O Array original :" + numeros +
+      " o array criado com o filter():  " + pares + "<br>"); // [2, 4, 6]
+
+    document.write("<h3>Exemplo de uso do reduce</h3>");
+    let precos = [10, 20, 30];
+    let total = precos.reduce((acumulador, preco) => 
+    { return acumulador + preco; }, 0); // Começa em 0 a variavel acumulador
+    document.write("O array preços" +precos+"O valor total é ",total); // Resultado: 60
+
+  </script>
+
+</body>
+
+</html>

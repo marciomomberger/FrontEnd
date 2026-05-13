@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let nota = parseFloat(prompt("Digite a nota:"));
+    let conceito;
+    if (nota >= 9) {
+      conceito="Excelente";
+    } else if (nota >= 7) {
+      conceito="Bom";
+    } else if (nota >= 5) {
+      conceito="Regular";
+    } else {
+      conceito="Insuficiente";
+    }
+    alert("A nota digitada foi "+nota+" o conceito é "+conceito);
+  </script>
+</body>
+
+</html>

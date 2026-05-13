@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Exemplo Display Block</title>
+
+<style>
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+/* EXEMPLO BASE */
+.box {
+    background: lightblue;
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* ELEMENTO INLINE VIRANDO BLOCK */
+.inline {
+    background: orange;
+    padding: 10px;
+}
+
+/* BOTÃO */
+.botao {
+    display: block;
+    background: green;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* MENU */
+.menu a {
+    display: block;
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.menu a:hover {
+    background: #555;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Exemplo de display: block</h1>
+
+<p>
+O <strong>display: block</strong> faz com que o elemento ocupe toda a largura disponível e fique em uma nova linha.
+</p>
+
+<hr>
+
+<h2>Exemplo 1 – Elementos padrão block</h2>
+
+<div class="box">DIV já é block</div>
+<p class="box">P também é block</p>
+
+<hr>
+
+<h2>Exemplo 2 – Transformando inline em block</h2>
+
+<span class="inline">Antes era inline</span>
+
+<style>
+.inline {
+    display: block;
+}
+</style>
+
+<p>
+👉 Agora o <code>span</code> ocupa toda a linha.
+</p>
+
+<hr>
+
+<h2>Exemplo 3 – Botão ocupando toda a largura</h2>
+
+<button class="botao">Botão em bloco</button>
+
+<hr>
+
+<h2>Exemplo 4 – Menu vertical</h2>
+
+<div class="menu">
+    <a href="#">Home</a>
+    <a href="#">Produtos</a>
+    <a href="#">Contato</a>
+</div>
+
+<p>
+👉 Links com <code>display: block</code> ocupam toda a linha, criando um menu vertical.
+</p>
+
+<hr>
+
+<h2>Resumo</h2>
+
+<ul>
+    <li>✔ Ocupa toda a largura</li>
+    <li>✔ Quebra linha automaticamente</li>
+    <li>✔ Permite definir largura e altura</li>
+    <li>✔ Muito usado em layout e menus</li>
+</ul>
+
+</body>
+</html>

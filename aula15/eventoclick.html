@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM com Botão</title>
+    <style>
+        body {
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            background: #f4f4f4;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background: royalblue;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <button id="botao">Clique Aqui</button>
+    <script>
+        // seleciona o botão pelo id
+        let botao = document.getElementById("botao");
+        // adiciona evento de clique
+        botao.addEventListener("click", function() {
+            alert("Você Clicou");
+        });
+    </script>
+</body>
+</html>

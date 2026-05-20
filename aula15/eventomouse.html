@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Vermelho com DOM</title>
+    <style>
+        body {
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        input {
+            width: 300px;
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="campo" placeholder="Passe o mouse aqui">
+    <script>
+        // seleciona o campo
+        let campo = document.getElementById("campo");
+        // quando o mouse entra
+        campo.addEventListener("mouseover", function() {
+            campo.style.backgroundColor = "red";
+        });
+        // quando o mouse sai
+        campo.addEventListener("mouseout", function() {
+            campo.style.backgroundColor = "white";
+        });
+    </script>
+</body>
+</html>

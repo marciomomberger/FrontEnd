@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleitens.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+        <button onclick="adicionar()"> Adicionar Tarefa </button>
+        <ul id="lista"></ul>
+    </div>
+    <script>
+        function adicionar() {
+            // pega o texto digitado
+            let texto = document.getElementById("tarefa").value;
+            // verifica se está vazio
+            if(texto == "") {
+                alert("Digite uma tarefa");
+                return;
+            }
+            // cria item da lista
+            let item = document.createElement("li");
+            item.innerHTML = texto;
+            // remove ao clicar
+            item.onclick = function() {
+                item.remove();
+            }
+            // adiciona na lista
+            document.getElementById("lista").appendChild(item);
+            // limpa o campo
+            document.getElementById("tarefa").value = "";
+        }
+    </script>
+</body>
+</html>

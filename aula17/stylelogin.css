@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    background-color: #1e1e1e;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOTÃO PRINCIPAL */
+
+#abrirModal{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: royalblue;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#abrirModal:hover{
+    transform: scale(1.05);
+    background-color: rgb(44, 92, 236);
+}
+
+/* OVERLAY */
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+/* MODAL */
+
+.modal{
+    background-color: #2a2a2a;
+    width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    animation: aparecer 0.4s ease;
+}
+
+.modal h2{
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* INPUTS */
+
+.modal input{
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* MENSAGEM */
+
+#mensagem{
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    min-height: 20px;
+}
+
+/* BOTÕES */
+
+.botoes{
+    display: flex;
+    gap: 10px;
+}
+
+.botoes button{
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#entrar{
+    background-color: green;
+}
+
+#fechar{
+    background-color: crimson;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes aparecer{
+
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

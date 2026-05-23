@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Produtos</title>
+    <link rel="stylesheet" href="styleprod.css">
+</head>
+<body>
+    <!-- BOTÃO LOGIN -->
+    <button id="abrirModal">Fazer Login</button>
+    <!-- MODAL -->
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <h2>Login</h2>
+            <input type="text" id="usuario" placeholder="Usuário">
+            <input type="password" id="senha" placeholder="Senha">
+            <p id="mensagem"></p>
+            <div class="botoes">
+                <button id="entrar">Entrar</button>
+                <button id="fechar">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <!-- SISTEMA -->
+    <div id="sistema">
+        <!-- MENU -->
+        <header>
+            <h1>Sistema de Produtos</h1>
+            <nav>
+                <button id="menuCadastro">Cadastro</button>
+                <button id="menuLista">Produtos</button>
+                <button id="trocarTema">Tema</button>
+            </nav>
+        </header>
+        <!-- CADASTRO -->
+        <section id="cadastro">
+            <h2>Cadastrar Produto</h2>
+            <input type="text" id="nomeProduto" placeholder="Nome do Produto">
+            <input type="number" id="precoProduto" placeholder="Preço">
+            <button id="salvarProduto">Salvar Produto </button>
+        </section>
+        <!-- LISTA -->
+        <section id="lista">
+            <h2>Produtos Cadastrados</h2>
+            <input type="text" id="pesquisa" placeholder="Pesquisar produto..." >
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaProdutos">
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="scriptprod.js"></script>
+</body>
+</html>

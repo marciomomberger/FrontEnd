@@ -1,0 +1,44 @@
+
+<style>
+#toast{
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background: black;
+    color: white;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    opacity: 0;
+
+    transition: 0.5s;
+}
+
+</style>
+
+<button id="salvar">Salvar</button>
+
+<div id="toast"></div>
+
+<script>
+    const salvar = document.getElementById("salvar")
+const toast = document.getElementById("toast")
+
+salvar.addEventListener("click", () => {
+
+    toast.innerHTML = "Salvo com sucesso!"
+
+    toast.style.opacity = "1"
+
+    setTimeout(() => {
+
+        toast.style.opacity = "0"
+
+    }, 3000)
+
+})
+</script>

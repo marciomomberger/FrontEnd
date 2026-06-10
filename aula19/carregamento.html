@@ -1,0 +1,13 @@
+<button id="carregar">Buscar Dados</button>
+<p id="status"></p>
+<script>
+    const carregar = document.getElementById("carregar")
+    const status = document.getElementById("status")
+    carregar.addEventListener("click", () => {
+        status.innerHTML = "Carregando..."
+        setTimeout(() => {
+            status.innerHTML = "Dados carregados!"
+        }, 3000)
+
+    })
+</script>

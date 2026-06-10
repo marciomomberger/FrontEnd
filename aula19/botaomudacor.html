@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>botao muda cor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       button {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            color: green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="botao">Enviar</button>
+    <p id="mensagem"></p>
+
+    <script>
+        const botao = document.getElementById("botao")
+        const mensagem = document.getElementById("mensagem")
+        botao.addEventListener("click", () => {
+            mensagem.innerHTML = "Dados enviados com sucesso!"
+            mensagem.style.color = "green"
+            botao.style.backgroundColor = "blue"
+        })
+    </script>
+</body>
+
+</html>

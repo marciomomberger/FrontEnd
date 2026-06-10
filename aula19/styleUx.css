@@ -1,0 +1,45 @@
+body{
+    font-family: Arial;
+    transition: 0.5s;
+}
+
+.dark{
+    background: #222;
+    color: white;
+}
+
+.login{
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+#toast{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: 0.5s;
+}

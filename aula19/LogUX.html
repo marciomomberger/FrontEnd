@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login UX</title>
+<link rel="stylesheet" href="styleLog.css">
+</head>
+<body id="pagina">
+<div class="container">
+    <div class="card">
+        <h1>🔐 Login</h1>
+        <form id="formulario">
+            <div class="campo">
+                <label>👤 Usuário</label>
+                <input type="text" id="usuario" placeholder="Digite seu usuário" >
+            </div>
+            <div class="campo">
+                <label>🔒 Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha">
+            </div>
+            <button type="submit">Entrar </button>
+        </form>
+        <p id="mensagem"></p>
+        <button id="tema" class="tema">🌙 Trocar Tema </button>
+    </div>
+</div>
+<div id="toast"></div>
+<script src="scriptlog.js"></script>
+</body>
+</html>

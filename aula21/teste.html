@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Bootstrap 4 + 8</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+        }
+
+        .sidebar{
+            background:#f8f9fa;
+            padding:20px;
+            border-radius:10px;
+            min-height:500px;
+        }
+
+        .content{
+            background:#ffffff;
+            padding:20px;
+            border-radius:10px;
+            min-height:500px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        footer{
+            margin-top:auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Site</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO -->
+    <div class="container my-4">
+        <div class="row">
+
+            <!-- LATERAL = 4 -->
+            <div class="col-md-4 mb-3">
+                <div class="sidebar">
+                    <h3>Menu Lateral</h3>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            Dashboard
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            Usuários
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            Relatórios
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            Configurações
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CENTRAL = 8 -->
+            <div class="col-md-8">
+                <div class="content">
+                    <h2>Área Principal</h2>
+                    <p>
+                        Esta área ocupa 8 colunas do Bootstrap.
+                    </p>
+
+                    <!-- SUBDIVISÃO INTERNA -->
+                    <div class="row mt-4">
+
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-header bg-success text-white">
+                                    Coluna 1
+                                </div>
+                                <div class="card-body">
+                                    Conteúdo da primeira subdivisão.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-header bg-info text-white">
+                                    Coluna 2
+                                </div>
+                                <div class="card-body">
+                                    Conteúdo da segunda subdivisão.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- CARD EXTRA -->
+                    <div class="card mt-3">
+                        <div class="card-header">
+                            Conteúdo Adicional
+                        </div>
+                        <div class="card-body">
+                            Esta seção ocupa toda a largura das 8 colunas centrais.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-dark text-white text-center py-3">
+        © 2026 - Exemplo de Layout Bootstrap
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

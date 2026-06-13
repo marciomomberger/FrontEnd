@@ -1,0 +1,250 @@
+/* ==========================
+   CONFIGURAÇÕES GERAIS
+========================== */
+
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==========================
+   LOGIN
+========================== */
+
+.vh-100 {
+    background: linear-gradient(
+        135deg,
+        #0d6efd,
+        #4f8cff
+    );
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    animation: aparecer 0.5s ease;
+}
+
+.card-header {
+    padding: 20px;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(13,110,253,0.3);
+    border-color: #0d6efd;
+}
+
+.btn {
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar {
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* ==========================
+   BOTÕES DASHBOARD
+========================== */
+
+.row.g-4 .btn {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ==========================
+   TABELAS
+========================== */
+
+.table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+.table thead {
+    background: #0d6efd;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #f0f6ff;
+}
+
+/* ==========================
+   MODAIS
+========================== */
+
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+.modal-header {
+    background: #0d6efd;
+    color: white;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal-body input,
+.modal-body select {
+    margin-bottom: 10px;
+}
+
+/* ==========================
+   TITULOS
+========================== */
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+/* ==========================
+   DASHBOARD CARDS
+========================== */
+
+.dashboard-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+    transition: all .3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card h2 {
+    font-size: 2.5rem;
+    color: #0d6efd;
+}
+
+.dashboard-card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* ==========================
+   SCROLL TABELAS
+========================== */
+
+.table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* ==========================
+   ANIMAÇÕES
+========================== */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.fade-in {
+    animation: aparecer .5s ease;
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:768px){
+
+    h3{
+        text-align:center;
+    }
+
+    .btn{
+        margin-bottom:10px;
+    }
+
+    .table{
+        font-size:14px;
+    }
+
+}
+
+/* ==========================
+   TEMA ESCURO
+========================== */
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .table {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.dark-mode .table thead {
+    background-color: #343a40;
+}
+
+.dark-mode .card {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.dark-mode .modal-content {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.dark-mode .form-control,
+.dark-mode .form-select {
+    background-color: #3d3d3d;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode .navbar {
+    background-color: #111 !important;
+}
